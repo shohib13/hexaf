@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<!-- saved from url=(0756)http://apps.wix.com/shoutout-get-subscriber-server-webapp/statics/index?cacheKiller=1464130147636&compId=comp-ifp4za7a&deviceType=desktop&instance=-OGHnz2GtzXaqMibJjbAEx-OOTYQp6QkOsrE_kKnErU.eyJpbnN0YW5jZUlkIjoiNWFjNGRjZmUtZTFlMi00YmFmLTljZWEtNzExYzIxN2NlNzNjIiwic2lnbkRhdGUiOiIyMDE2LTA1LTI0VDIyOjQ5OjA1LjcwN1oiLCJ1aWQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpcEFuZFBvcnQiOiIxMzkuMTkyLjEuODQvMzQwMTgiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjp0cnVlLCJvcmlnaW5JbnN0YW5jZUlkIjoiMzEzM2FiNDEtNzY4MC00YzZjLWIwNGYtMWQ0MDY3YWI5ZTRkIiwiYWlkIjoiZTY4MjNhODQtYWM0MC00NGU3LTljOGUtOGExNzRlYzhmYTFjIiwiYmlUb2tlbiI6IjFjZjQ3YWI1LTk0OTAtMDBjYy0wM2ZhLTA0YTQzMjE0NzlhZSIsInNpdGVPd25lcklkIjoiODQ3NzBmNjctZWNiZC00NGI2LWIzNWEtNTg0ZjJkYzE1YWYxIn0&locale=en&viewMode=site&width=492 -->
+<html ng-app="shoutoutGetSubscriberApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shoutoutGetSubscriber</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="origin">
+    <link type="image/png" href="http://www.wix.com/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="./fontFace.css">
+    <!-- <link rel="stylesheet" href="//static.parastorage.com/services/shoutout-get-subscriber/1.31.0/bower_components/wix-ui-lib2/ui-lib.min.css"> -->
+    <!-- <link rel="stylesheet" href="//static.parastorage.com/services/shoutout-get-subscriber/1.31.0/bower_components/wix-style/dist/styles/style.min.css"> -->
+    <link rel="stylesheet" href="./font-awesome.css">
+
+    <!--  -->
+<link rel="stylesheet" href="./main.css">
+<!--  -->
+
+    <style wix-style="" type="text/css" ng-non-bindable="">
+
+      .app-container,
+      .upgrade-app-container,
+      .success-view {
+        background-color: rgba(237,239,240,0);
+        border-width: 0px;
+        border-color: #D6D6D6;
+      }
+
+      .app-container.classic,
+      .app-container.strip,
+      .success-view {
+        border-radius: style.cornersSliderpx;
+      }
+
+      .classic .header-block {
+        background-color: #D6D6D6;
+        border-top-left-radius: calc(style.cornersSliderpx + -12px);
+        border-top-right-radius: calc(style.cornersSliderpx + -12px);
+      }
+
+      .app-container.elegant,
+      .upgrade-app-container,
+      .success-view {
+        background-color: rgba(237,239,240,0);
+        border-bottom-left-radius: style.cornersSliderpx;
+        border-bottom-right-radius: style.cornersSliderpx;
+      }
+
+      .app-container.headline,
+      .upgrade-app-container,
+      .success-view {
+        background-color: rgba(237,239,240,0);
+        border-bottom-left-radius: style.cornersSliderpx;
+        border-bottom-right-radius: style.cornersSliderpx;
+        border-width: 0px;
+        border-color: #D6D6D6;
+      }
+
+      .name-label,
+      .country-code,
+      .phone-number-label,
+      .email-label,
+      .field-description-label {
+        color: style.labelTextColor;
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+      }
+
+      .name-block,
+      .prefix-block,
+      .email-block,
+      .phone-input-block {
+        border-width: style.linesSliderpx;
+        border-color: #D6D6D6;
+        background-color: #D6D6D6;
+        color: #202A2B;
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+      }
+
+      .postcard .email-block,
+      .postcard .name-block {
+        border-width: style.linesSliderpx;
+        border-color: #D6D6D6;
+      }
+
+      .postcard.app-container::before {
+        background-color: rgba(237,239,240,0);
+      }
+
+      .prefix-block {
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+      }
+      .prefix {
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+        color: #202A2B;
+        background-color: #D6D6D6;
+      }
+
+      .select-icon {
+        font-size: inherit;
+        color: #202A2B;
+      }
+
+      .user-icon,
+      .phone-icon,
+      .email-icon {
+        font-size: inherit;
+        color: #5E5E5E;
+      }
+
+      .name-input::-webkit-input-placeholder,
+      .phone-number-input::-webkit-input-placeholder,
+      .email-input[type=email]::-webkit-input-placeholder {
+        color: #202A2B;
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+      }
+
+      .name-input:-ms-input-placeholder,
+      .phone-number-input:-ms-input-placeholder,
+      .email-input[type=email]:-ms-input-placeholder {
+        color: #202A2B;
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+      }
+
+      .name-input::-moz-input-placeholder,
+      .phone-number-input::-moz-input-placeholder,
+      .email-input[type=email]:-moz-input-placeholder {
+        color: #202A2B;
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+      }
+
+      .title-row {
+        color: #D6D6D6;
+        font:normal normal normal 17px/1.4em raleway,sans-serif;;
+      }
+
+      .subtitle-row {
+        color: #D6D6D6;
+        font:normal normal normal 17px/1.4em raleway,sans-serif;;
+
+      }
+      .classic .subscribe-button,
+      .strip .subscribe-button,
+      .postcard .subscribe-button,
+      .elegant .subscribe-button,
+      .headline .subscribe-button {
+        background-color: rgba(64,83,87,1) !important;
+        border-color: #405357;
+        border-width: style.linesSliderpx;
+        color: style.buttonTextColor;
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+      }
+
+      .app-container.in-popup {
+        background-color: #EDEFF0;
+      }
+
+      .upgrade-app-text {
+        font:normal normal normal 15px/1.4em raleway,sans-serif;;
+        color: #D6D6D6;
+      }
+
+      .success-view-title {
+        color: #D6D6D6;
+        font:normal normal normal 17px/1.4em raleway,sans-serif;;
+      }
+
+      .success-view-subtitle {
+        color: #D6D6D6;
+        font:normal normal normal 17px/1.4em raleway,sans-serif;;
+      }
+
+      .success-back-to-editor {
+        background-color: #D6D6D6;
+        color: rgba(237,239,240,0);
+      }
+
+      .close-popup {
+        color: #D6D6D6;
+        text-shadow: rgba(64,83,87,1);
+      }
+
+      .close-popup:hover {
+        color: rgba(64,83,87,1);
+        text-shadow: #D6D6D6;
+      }
+
+    </style>
+
+    
+    <!-- MixPanel Analytics -->
+    <script type="text/javascript" async="" src="./mixpanel-2.2.min.js"></script><script type="text/javascript">
+        (function (e, b) {
+            if (!b.__SV) {
+                var a, f, i, g;
+                window.mixpanel = b;
+                b._i = [];
+                b.init = function (a, e, d) {
+                    function f(b, h) {
+                        var a = h.split(".");
+                        2 == a.length && (b = b[a[0]], h = a[1]);
+                        b[h] = function () {
+                            b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                        }
+                    }
+
+                    var c = b;
+                    "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                    c.people = c.people || [];
+                    c.toString = function (b) {
+                        var a = "mixpanel";
+                        "mixpanel" !== d && (a += "." + d);
+                        b || (a += " (stub)");
+                        return a
+                    };
+                    c.people.toString = function () {
+                        return c.toString(1) + ".people (stub)"
+                    };
+                    i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (g = 0; g < i.length; g++)f(c, i[g]);
+                    b._i.push([a, e, d])
+                };
+                b.__SV = 1.2;
+                a = e.createElement("script");
+                a.type = "text/javascript";
+                a.async = !0;
+                a.src = ("https:" === e.location.protocol ? "https:" : "http:") + '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';
+                f = e.getElementsByTagName("script")[0];
+                f.parentNode.insertBefore(a, f)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("b8f279f309ff018a6cf07375fe4e59aa", {cross_subdomain_cookie: false, persistence: 'localStorage', persistence_name: 'gs', cookie_expiration: 10});
+    </script>
+  <style wix-style="">.Title{ font:normal normal bold 17px/1.4em tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif; } .Menu{ font:normal normal normal 15px/1.4em raleway,sans-serif; } .Page-title{ font:normal normal bold 40px/1.4em raleway,sans-serif; } .Heading-XL{ font:normal normal bold 80px/1.4em raleway,sans-serif; } .Heading-L{ font:normal normal bold 48px/1.4em raleway,sans-serif; } .Heading-M{ font:normal normal normal 20px/1.4em raleway,sans-serif; } .Heading-S{ font:normal normal normal 18px/1.4em raleway,sans-serif; } .Body-L{ font:normal normal normal 17px/1.4em raleway,sans-serif; } .Body-M{ font:normal normal normal 15px/1.4em raleway,sans-serif; } .Body-S{ font:normal normal normal 13px/1.4em raleway,sans-serif; } .Body-XS{ font:normal normal normal 10px/1.4em arial,"ｍｓ ｐゴシック","ms pgothic","돋움",dotum,helvetica,sans-serif; } }</style><link type="text/css" rel="stylesheet" href="./css" id="wix-google-fonts"><link type="text/css" rel="stylesheet" href="./latin.css"></head><script>function inject() {
+
+	var originalOpenWndFnKey = "originalOpenFunction";
+
+			var originalWindowOpenFn 	= window.open,
+			    originalCreateElementFn = document.createElement,
+			    originalCreateEventFn 	= document.createEvent,
+				windowsWithNames = {};
+			var timeSinceCreateAElement = 0;
+			var lastCreatedAElement = null;
+			var fullScreenOpenTime;
+			var parentOrigin = (window.location != window.parent.location) ? document.referrer: document.location;
+
+			window[originalOpenWndFnKey] = window.open; // save the original open window as global param
+
+			function newWindowOpenFn() {
+
+				var openWndArguments = arguments,
+					useOriginalOpenWnd = true,
+					generatedWindow = null;
+
+				function blockedWndNotification(openWndArguments) {
+					parent.postMessage({ type: "blockedWindow", args: JSON.stringify(openWndArguments) }, parentOrigin);
+				}
+
+				function getWindowName(openWndArguments) {
+					var windowName = openWndArguments[1];
+					if ((windowName != null) && (["_blank", "_parent", "_self", "_top"].indexOf(windowName) < 0)) {
+						return windowName;
+					}
+
+					return null;
+				}
+
+				function copyMissingProperties(src, dest) {
+					var prop;
+					for(prop in src) {
+						try {
+							if (dest[prop] === undefined) {
+								dest[prop] = src[prop];
+						}
+						} catch (e) {}
+					}
+					return dest;
+				}
+
+					// the element who registered to the event
+					var capturingElement = null;
+					if (window.event != null) {
+						capturingElement = window.event.currentTarget;
+					}
+
+					if (capturingElement == null) {
+						var caller = openWndArguments.callee;
+						while ((caller.arguments != null) && (caller.arguments.callee.caller != null)) {
+							caller = caller.arguments.callee.caller;
+						}
+						if ((caller.arguments != null) && (caller.arguments.length > 0) && (caller.arguments[0].currentTarget != null)) {
+							capturingElement = caller.arguments[0].currentTarget;
+						}
+					}
+
+				/////////////////////////////////////////////////////////////////////////////////
+				// Blocked if a click on background element occurred (<body> or document)
+				/////////////////////////////////////////////////////////////////////////////////
+
+					if ((capturingElement != null) && (
+							(capturingElement instanceof Window) ||
+							(capturingElement === document) ||
+							(
+								(capturingElement.URL != null) && (capturingElement.body != null)
+							) ||
+							(
+								(capturingElement.nodeName != null) && (
+									(capturingElement.nodeName.toLowerCase() == "body") ||
+									(capturingElement.nodeName.toLowerCase() == "#document")
+								)
+							)
+						)) {
+							window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because it was triggered by the " + capturingElement.nodeName + " element";
+							// console.info(window.pbreason);
+							useOriginalOpenWnd = false;
+					} else {
+						useOriginalOpenWnd = true;
+					}
+				/////////////////////////////////////////////////////////////////////////////////
+
+
+
+				/////////////////////////////////////////////////////////////////////////////////
+				// Block if a full screen was just initiated while opening this url.
+				/////////////////////////////////////////////////////////////////////////////////
+
+					// console.info("fullscreen: " + ((new Date()).getTime() - fullScreenOpenTime));
+					// console.info("webkitFullscreenElement: " + document.webkitFullscreenElement);
+					var fullScreenElement = document.webkitFullscreenElement || document.mozFullscreenElement || document.fullscreenElement
+					if ((((new Date()).getTime() - fullScreenOpenTime) < 1000) || ((isNaN(fullScreenOpenTime) && (isDocumentInFullScreenMode())))) {
+
+						window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because a full screen was just initiated while opening this url.";
+						// console.info(window.pbreason);
+
+						/* JRA REMOVED
+						if (window[script_params.fullScreenFnKey]) {
+							window.clearTimeout(window[script_params.fullScreenFnKey]);
+						}
+						*/
+
+						if (document.exitFullscreen) {
+							document.exitFullscreen();
+						}
+						else if (document.mozCancelFullScreen) {
+							document.mozCancelFullScreen();
+						}
+						else if (document.webkitCancelFullScreen) {
+							document.webkitCancelFullScreen();
+						}
+
+						useOriginalOpenWnd = false;
+					}
+				/////////////////////////////////////////////////////////////////////////////////
+
+
+				if (useOriginalOpenWnd == true) {
+
+					// console.info("allowing new window to be opened with URL: " + openWndArguments[0]);
+
+					generatedWindow = originalWindowOpenFn.apply(this, openWndArguments);
+
+					// save the window by name, for latter use.
+					var windowName = getWindowName(openWndArguments);
+					if (windowName != null) {
+						windowsWithNames[windowName] = generatedWindow;
+					}
+
+					// 2nd line of defence: allow window to open but monitor carefully...
+
+					/////////////////////////////////////////////////////////////////////////////////
+					// Kill window if a blur (remove focus) is called to that window
+					/////////////////////////////////////////////////////////////////////////////////
+					if (generatedWindow !== window) {
+						var openTime = (new Date()).getTime();
+						var originalWndBlurFn = generatedWindow.blur;
+						generatedWindow.blur = function() {
+							if (((new Date()).getTime() - openTime) < 1000 /* one second */) {
+								window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because a it was blured";
+								// console.info(window.pbreason);
+								generatedWindow.close();
+								blockedWndNotification(openWndArguments);
+							} else {
+								// console.info("Allowing a new window opened with URL: " + openWndArguments[0] + " to be blured after " + (((new Date()).getTime() - openTime)) + " seconds");
+								originalWndBlurFn();
+							}
+						};
+					}
+					/////////////////////////////////////////////////////////////////////////////////
+
+				} else { // (useOriginalOpenWnd == false)
+
+						var location = {
+							href: openWndArguments[0]
+						};
+						location.replace = function(url) {
+							location.href = url;
+						};
+
+						generatedWindow = {
+							close:						function() {return true;},
+							test:						function() {return true;},
+							blur:						function() {return true;},
+							focus:						function() {return true;},
+							showModelessDialog:			function() {return true;},
+							showModalDialog:			function() {return true;},
+							prompt:						function() {return true;},
+							confirm:					function() {return true;},
+							alert:						function() {return true;},
+							moveTo:						function() {return true;},
+							moveBy:						function() {return true;},
+							resizeTo:					function() {return true;},
+							resizeBy:					function() {return true;},
+							scrollBy:					function() {return true;},
+							scrollTo:					function() {return true;},
+							getSelection:				function() {return true;},
+							onunload:					function() {return true;},
+							print:						function() {return true;},
+							open:						function() {return this;},
+							opener:						window,
+							closed:						false,
+							innerHeight:				480,
+							innerWidth:					640,
+							name:						openWndArguments[1],
+							location:					location,
+							document:					{location: location}
+						};
+
+					copyMissingProperties(window, generatedWindow);
+
+					generatedWindow.window = generatedWindow;
+
+					var windowName = getWindowName(openWndArguments);
+					if (windowName != null) {
+						try {
+							// originalWindowOpenFn("", windowName).close();
+							windowsWithNames[windowName].close();
+							// console.info("Closed window with the following name: " + windowName);
+						} catch (err) {
+							// console.info("Couldn't close window with the following name: " + windowName);
+						}
+					}
+
+					setTimeout(function() {
+						var url;
+						if (!(generatedWindow.location instanceof Object)) {
+							url = generatedWindow.location;
+						} else if (!(generatedWindow.document.location instanceof Object)) {
+							url = generatedWindow.document.location;
+						} else if (location.href != null) {
+							url = location.href;
+						} else {
+							url = openWndArguments[0];
+						}
+						openWndArguments[0] = url;
+						blockedWndNotification(openWndArguments);
+					}, 100);
+				}
+
+				return generatedWindow;
+			}
+
+
+			/////////////////////////////////////////////////////////////////////////////////
+			// Replace the window open method with Poper Blocker's
+			/////////////////////////////////////////////////////////////////////////////////
+			window.open = function() {
+				try {
+					return newWindowOpenFn.apply(this, arguments);
+				} catch(err) {
+					return null;
+				}
+			};
+			/////////////////////////////////////////////////////////////////////////////////
+
+
+
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////
+			// Monitor dynamic html element creation to prevent generating <a> elements with click dispatching event
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////
+			document.createElement = function() {
+
+					var newElement = originalCreateElementFn.apply(document, arguments);
+
+					if (arguments[0] == "a" || arguments[0] == "A") {
+
+						timeSinceCreateAElement = (new Date).getTime();
+
+						var originalDispatchEventFn = newElement.dispatchEvent;
+
+						newElement.dispatchEvent = function(event) {
+							if (event.type != null && (("" + event.type).toLocaleLowerCase() == "click")) {
+								window.pbreason = "blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag";
+								// console.info(window.pbreason);
+								parent.postMessage({type:"blockedWindow", args: JSON.stringify({"0": newElement.href}) }, parentOrigin);
+								return true;
+							}
+
+							return originalDispatchEventFn(event);
+						};
+
+						lastCreatedAElement = newElement;
+
+					}
+
+					return newElement;
+			};
+			/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+			/////////////////////////////////////////////////////////////////////////////////
+			// Block artificial mouse click on frashly created <a> elements
+			/////////////////////////////////////////////////////////////////////////////////
+			document.createEvent = function() {
+				try {
+					if ((arguments[0].toLowerCase().indexOf("mouse") >= 0) && ((new Date).getTime() - timeSinceCreateAElement) <= 50) {
+						window.pbreason = "Blocked because 'a' element was recently created and " + arguments[0] + " event was created shortly after";
+						// console.info(window.pbreason);
+						arguments[0] = lastCreatedAElement.href;
+						parent.postMessage({ type: "blockedWindow", args: JSON.stringify({"0": lastCreatedAElement.href}) }, parentOrigin);
+						return null;
+					}
+					return originalCreateEventFn.apply(document, arguments);
+				} catch(err) {}
+			};
+			/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+			/////////////////////////////////////////////////////////////////////////////////
+			// Monitor full screen requests
+			/////////////////////////////////////////////////////////////////////////////////
+			function onFullScreen(isInFullScreenMode) {
+					if (isInFullScreenMode) {
+						fullScreenOpenTime = (new Date()).getTime();
+						// console.info("fullScreenOpenTime = " + fullScreenOpenTime);
+					} else {
+						fullScreenOpenTime = NaN;
+					}
+			};
+			/////////////////////////////////////////////////////////////////////////////////
+
+			function isDocumentInFullScreenMode() {
+				// Note that the browser fullscreen (triggered by short keys) might
+				// be considered different from content fullscreen when expecting a boolean
+				return ((document.fullScreenElement && document.fullScreenElement !== null) ||    // alternative standard methods
+					((document.mozFullscreenElement != null) || (document.webkitFullscreenElement != null)));                   // current working methods
+			}
+
+			document.addEventListener("fullscreenchange", function () {
+				onFullScreen(document.fullscreen);
+			}, false);
+
+			document.addEventListener("mozfullscreenchange", function () {
+				onFullScreen(document.mozFullScreen);
+			}, false);
+
+			document.addEventListener("webkitfullscreenchange", function () {
+				onFullScreen(document.webkitIsFullScreen);
+			}, false);
+
+		} inject()</script>
+  <body resize="" style="">
+<script type="text/javascript" src="./wix.min.js"></script>
+    <!-- Add your site or application content here -->
+    <!-- ngInclude: 'modules/widget/viewer.html' --><div class="container ng-scope" ng-include="&#39;modules/widget/viewer.html&#39;"><div class="main-view ng-scope">
+  <get-subscribers><!-- ngIf: !main.hideFormIfPopupIsOpen() --><div class="app-container ng-scope strip layout-old-horizontal" ng-class="[main.getStyle()[&#39;skin&#39;], main.getStyle()[&#39;layout&#39;], main.popupBackground()]" ng-if="!main.hideFormIfPopupIsOpen()">
+  <div class="layout-specific-attribute"></div>
+  <div class="app-view" ng-class="{&#39;success-view-shown&#39;: main.subscribeIsSuccessful}">
+    <div class="header-block align-header-left" ng-class="main.getStyle()[&#39;headerAlignment&#39;]">
+      <!-- ngIf: main.isInPopup() && !main.isPreview() -->
+      <!-- ngIf: main.settings.signupForm.showTitle && !main.isInPopup() --><div class="title-row ng-binding ng-scope" ng-if="main.settings.signupForm.showTitle &amp;&amp; !main.isInPopup()">
+        Join our mailing list
+      </div><!-- end ngIf: main.settings.signupForm.showTitle && !main.isInPopup() -->
+      <!-- ngIf: main.isInPopup() -->
+      <!-- ngIf: main.settings.signupForm.showSubtitle && main.settings.signupForm.showTitle && !main.isInPopup() -->
+      <!-- ngIf: main.settings.popup.showSubtitle && main.isInPopup() -->
+    </div>
+    <div class="collectable-info align-body-left" ng-class="main.getStyle()[&#39;bodyAlignment&#39;]">
+      <!-- ngIf: main.settings.generalSettings.collectName -->
+      <!-- ngIf: main.generalSettings.collectPhone -->
+      <div class="email-info-block">
+        <span class="label-block">
+          <label class="field-description-label email-label ng-binding">
+            Email
+          </label>
+        </span>
+        <div class="email-block input-block" ng-class="{invalid: !main.validEmail}">
+          <i class="fa fa-envelope-o email-icon icon"></i>
+          <input class="email-input info-input ng-pristine ng-untouched ng-valid ng-valid-email" ng-class="{invalid: !main.validEmail}" ng-model="main.subscriberEmail" placeholder="Email Address" type="email">
+        </div>
+      </div>
+      <!-- ngIf: !main.isInPopup() --><div class="button-block ng-scope align-button-right" ng-class="main.getStyle()[&#39;buttonAlignment&#39;]" ng-if="!main.isInPopup()">
+        <button class="wix-button subscribe-button ng-binding" ng-click="main.subscribe()" ng-disabled="main.isPreview()">
+          Subscribe Now
+        </button>
+      </div><!-- end ngIf: !main.isInPopup() -->
+      <!-- ngIf: main.isInPopup() -->
+    </div>
+    <!-- ngIf: main.showError -->
+  </div>
+  <!-- ngInclude: 'modules/widget/upgrade-view.html' --><div ng-include="&#39;modules/widget/upgrade-view.html&#39;" class="ng-scope"><!-- ngIf: main.isInNeedOfUpgrade() -->
+</div>
+  <!-- ngInclude: 'modules/widget/success-view.html' --><div ng-include="&#39;modules/widget/success-view.html&#39;" class="ng-scope"><div class="success-view-container ng-scope">
+  <!-- ngIf: main.subscribeIsSuccessful && !main.isInEditorOrPreviewMode() -->
+  <!-- ngIf: main.subscribeIsSuccessful && main.isInEditorOrPreviewMode() -->
+</div>
+</div>
+</div><!-- end ngIf: !main.hideFormIfPopupIsOpen() -->
+</get-subscribers>
+</div>
+</div>
+
+    <script src="./jquery.min.js"></script>
+    <script src="./angular.min.js"></script>
+    <script src="./angular-translate.js"></script>
+    <script src="./wix-angular.js"></script>
+    <!-- <script src="//static.parastorage.com/services/shoutout-get-subscriber/1.31.0/bower_components/wix-style/dist/scripts/scripts.js"></script> -->
+    <!-- <script src="//static.parastorage.com/services/shoutout-get-subscriber/1.31.0/bower_components/wix-style/dist/scripts/locale/messages_en.js"></script> -->
+    <script src="./bootstrap.min.js"></script>
+    <script src="./ng-lodash.min.js"></script>
+    <script src="./angular-locale_en.js"></script>
+    <script src="./angular-translate-loader-static-files.min.js"></script>
+    <script src="./angular-local-storage.min.js"></script>
+    <!--  -->
+<script src="./messages_en.js"></script>
+<!--  -->
+    <!--  -->
+<script src="./modules.js"></script>
+<!--  -->
+    <!--  -->
+<script src="./scripts.js"></script>
+<!--  -->
+
+    <!--  -->
+    <script src="./viewer.html.js"></script>
+    <script src="./main.html.js"></script>
+    <script src="./success-view.html.js"></script>
+    <script src="./upgrade-view.html.js"></script>
+
+    <script>
+    angular.module('shoutoutGetSubscriberApp').requires.push('shoutoutGetSubscriberPreload');
+
+      angular.module('shoutoutGetSubscriberApp')
+        .config(function (wixAngularTopologyProvider, experimentManagerProvider) {
+          wixAngularTopologyProvider.setStaticsUrl('//static.parastorage.com/services/shoutout-get-subscriber/1.31.0/');
+          experimentManagerProvider.setExperiments(JSON.parse('{}'));
+          window.apiUrl = '/_api/shoutout-get-subscriber-server-webapp';
+        });
+    </script>
+
+    
+
+  
+
+</body></html>
